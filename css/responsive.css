@@ -327,6 +327,9 @@
         padding: 0 0 50px 0;
     }
     
+    .shop_lineup .owl-carousel {
+        padding: 0;
+    }
 
 
     .owl-carousel .item .product_details p {
