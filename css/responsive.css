@@ -56,11 +56,20 @@
 
 
 @media(max-width:1200px) {
+    h1 {
+        font-size: 56px;
+        line-height: 50px;
+    }
     h2 {
         font-size: 20px;
         line-height: 15px;
     }
-
+    .navbar {
+        padding: 15px 30px !important;
+    }
+    .shop_lineup {
+        padding: 100px 0;
+    } 
 
 
 
@@ -133,16 +142,71 @@
         font-size: 18px;
         line-height: 24px;
     }
+    .navbar {
+        padding: 15px 25px !important;
+    }
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--white-color);
+        z-index: 1000;
+    }
+    .main_header .dekstop_logo {
+        display: none;
+    }
+    .main_header .mobile_logo {
+        display: block;
+        filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(19%) hue-rotate(348deg) brightness(94%) contrast(104%);
+        width: 16px;
+    }
+    .main_header .lumaledf_brand {
+        position: unset;
+    }
+    .navbar-nav li {
+        width: calc(100% - 80px);
+        margin: 0px auto;
+    }
+    .navbar-nav li a {
+        padding: 15px 1px !important;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 4.14px;
+        display: table;
+    }
+    .navbar-nav li:not(:last-child) {
+        border-bottom: 1px solid var(--black-color);
+    }
+    .navbar-nav li .dropdown-toggle:after {
+        right: -20px;
+        width: 10px;
+        height: 18px;
+    }
+    .navbar .drop ul li,
+    .navbar-nav .dropdown-menu li {
+        width: 100%;
+        border: 0;
+    }
+    .navbar .drop ul li a,
+    .navbar-nav .dropdown-menu li a {
+        padding: 0 !important;
+    }
+    .dropdown-menu {
+        padding: 20px 0;
+    }
+    .navbar .drop .row .col-6 {
+        padding: 0 20px;
+        align-items: flex-start;
+    }
 
 
-
-
-
-
-
-
-
-
+    .navbar .drop {
+        min-width: auto !important;
+    }
+    .shop_lineup {
+        padding: 70px 0;
+    }
 
 
 
@@ -189,16 +253,6 @@
 
 
 @media(max-width:768px) {
-
-
-
-
-
-
-
-
-
-
     .shop_lineup .lineup_head img {
         width: 60px;
     }
@@ -246,13 +300,33 @@
 
 
 
-
+@media (min-width: 576px) {
+    .dropdown:hover > .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+    
+}
 
 
 
 @media(max-width:576px) {
+    h1 {
+        font-size: 46px;
+        line-height: 43px;
+        width: 50%;
+    }
+    .navbar {
+        padding: 15px 20px !important;
+    }
+    .main_banner {
+        background-image: url(../images/mobile-banner.png);
+        align-items: flex-end;
+        width: 95%;
+        height: 85vh;
+        padding: 0 0 50px 0;
+    }
     
-
 
 
     .owl-carousel .item .product_details p {
